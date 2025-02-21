@@ -14,3 +14,66 @@ MongoDB
 
 # Iniciar el servidor
 npm run dev
+
+# Estructura
+path = http://localhost:<port>
+
+# Autenticación
+## api/auth/register - obtenemos el token
+POST
+{
+  "name": "",
+  "password": "",
+  "password_confirmation": "",
+  "email": ""
+}
+
+## api/auth/login - obtenemos el token
+POST
+{
+  "email": "",
+  "password": ""
+}
+
+# Rutas protegidas con validacion de token y validacion de campos
+# Headers - "Authorization": "Bearer _token"
+
+# CATEGORIAS
+## /api/categories
+GET
+
+## /api/categories/:id -Type: ObjectId
+GET
+
+## /api/categories
+POST
+{
+  "name": ""
+}
+
+# PRODUCTOS
+## /api/products
+GET
+
+## /api/products
+POST
+{
+  "name": "",
+  "description": "",
+  "price": 1,
+  "stock": 20,
+  "category": "xxxxxxxxxxxxxxxxxx" - Type: ObjectId
+}
+
+## /api/products/:id - Type: ObjectId
+PUT
+{
+  "name": "",
+  "description": "",
+  "price": 1,
+  "stock": 20,
+  "category": "xxxxxxxxxxxxxxxxxx" - Type: ObjectId
+}
+
+## /api/products/:id - Type: ObjectId
+DELETE
