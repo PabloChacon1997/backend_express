@@ -1,0 +1,16 @@
+# Clonar el repositorio
+https://github.com/PabloChacon1997/backend_express.git
+
+# Instalar dependencias
+npm i
+
+# Crear archivo .env con los siguientes campos
+PORT= por defecto 4000
+DATABASE_URL=
+SECRET_KEY=
+
+# Based de datos
+MongoDB
+
+# Iniciar el servidor
+npm run dev
